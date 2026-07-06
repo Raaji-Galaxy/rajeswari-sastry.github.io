@@ -89,8 +89,7 @@ nav a:hover{
 }
 
 .hero-image{
-    flex:1;
-    text-align:center;
+    margin-top:60px;
 }
 
 .hero-image img{
