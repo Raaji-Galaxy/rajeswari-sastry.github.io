@@ -27,7 +27,7 @@ nav{
 }
 
 .logo{
-    color:white;
+    color:#fff;
     font-size:24px;
     font-weight:700;
 }
@@ -40,7 +40,7 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     font-weight:500;
     transition:.3s;
@@ -58,7 +58,7 @@ nav a:hover{
     align-items:center;
     padding:120px 8% 80px;
     background:linear-gradient(135deg,#6c63ff,#8d7dff);
-    color:white;
+    color:#fff;
     gap:50px;
     min-height:90vh;
 }
@@ -77,10 +77,9 @@ nav a:hover{
 }
 
 .hero-text h2{
-    color:white;
     font-size:28px;
+    color:#fff;
     margin-bottom:20px;
-    font-weight:500;
 }
 
 .hero-text p{
@@ -88,8 +87,14 @@ nav a:hover{
     margin-bottom:30px;
 }
 
+/* Move Image Down */
+
 .hero-image{
-    margin-top:60px;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:60px;   /* Change to 80px if you want it lower */
 }
 
 .hero-image img{
@@ -98,7 +103,7 @@ nav a:hover{
     object-fit:cover;
     border-radius:50%;
     border:6px solid white;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .buttons{
@@ -165,35 +170,38 @@ footer{
 
 @media(max-width:900px){
 
-nav{
-    flex-direction:column;
-}
+    nav{
+        flex-direction:column;
+    }
 
-nav ul{
-    justify-content:center;
-}
+    nav ul{
+        justify-content:center;
+    }
 
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding-top:150px;
-}
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:150px;
+    }
 
-.hero-text h1{
-    font-size:40px;
-}
+    .hero-image{
+        margin-top:30px;
+    }
 
-.hero-text h2{
-    font-size:24px;
-}
+    .hero-image img{
+        width:250px;
+        height:250px;
+    }
 
-.hero-image img{
-    width:250px;
-    height:250px;
-}
+    .hero-text h1{
+        font-size:40px;
+    }
 
-.buttons{
-    justify-content:center;
-}
+    .hero-text h2{
+        font-size:24px;
+    }
 
+    .buttons{
+        justify-content:center;
+    }
 }
